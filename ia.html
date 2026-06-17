@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang='pt-br'><head>
+<meta charset='UTF-8'><title>IA SIA</title>
+<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+<link href='https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&family=Instrument+Sans:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' rel='stylesheet'>
+<link rel='stylesheet' href='/style.css'>
+<link rel='stylesheet' href='/ia.css'>
+</head><body>
+<div class='sidebar-hist'>
+  <h2>Histórico</h2>
+  <div id='historico'></div>
+</div>
+<div class='main-ia'>
+  <div class='box'>
+    <div class='box-header'>
+      <div class='ia-icon'><i class='fa-solid fa-robot'></i></div>
+      <div><h2>Assistente IA — SIA</h2><p>Pergunte sobre o sistema de irrigação</p></div>
+    </div>
+    <input id='q' placeholder='Digite sua pergunta sobre o sistema...'>
+    <div class='res-box' id='res'>...</div>
+    <button class='send-btn' onclick='perguntar()'><i class='fa-solid fa-paper-plane'></i> Enviar</button>
+  </div>
+</div>
+<button class='sidebar-toggle'><i class='fa-solid fa-bars'></i></button>
+<div class='sidebar-overlay'></div>
+<button class='voltar' onclick="window.location.href='/dashboard'"><i class='fa-solid fa-arrow-left'></i> Voltar</button>
+<script src='/ia.js'></script>
+</body></html>

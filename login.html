@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang='pt-br'><head>
+<meta charset='UTF-8'><title>Login - SIA</title>
+<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+<link href='https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&family=Instrument+Sans:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' rel='stylesheet'>
+<link rel='stylesheet' href='/style.css'>
+<link rel='stylesheet' href='/login.css'>
+</head><body>
+<div class='topbar'>
+  <div class='topbar-brand'><span class='topbar-dot'></span><span>Sistema de Irrigação Automatizado</span></div>
+  <nav class='topbar-nav'>
+    <button class='nav-btn' onclick="window.location.href='/'"><i class='fa-solid fa-house'></i> Home</button>
+    <button class='nav-btn active' onclick="window.location.href='/login'"><i class='fa-solid fa-right-to-bracket'></i> Login</button>
+  </nav>
+</div>
+<div class='hero'>
+  <div class='hero-bg'></div><div class='hero-overlay'></div>
+  <div class='loginCard'>
+    <div class='logo-mark'><i class='fa-solid fa-leaf'></i></div>
+    <h2>Bem-vindo</h2>
+    <p class='tag'>Acesse o painel de controle</p>
+    <div class='field'>
+      <label><i class='fa-solid fa-user'></i> Usuário</label>
+      <input id='nome' placeholder='Digite seu nome'>
+    </div>
+    <div class='field'>
+      <label><i class='fa-solid fa-lock'></i> Senha</label>
+      <input id='senha' type='password' placeholder='••••••••'>
+    </div>
+    <button onclick='login()'><i class='fa-solid fa-right-to-bracket'></i> Entrar</button>
+    <div id='erro' class='erro'></div>
+  </div>
+</div>
+
+<script src='/login.js'></script>
+</body></html>
